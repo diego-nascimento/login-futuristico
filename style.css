@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
+* {
+    outline: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    min-width: 400px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    background: url("bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    bottom: 50px;
+    background-position: center;
+    background-size: contain; 
+    width: 400px;
+    height: 600px;
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 25px;
+    box-shadow: 1px 1px 300px 30px black;
+    border: 1px solid rgba(0,0,0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.container h1 {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    font-size: 48px;
+    color: rgba(255,255,255, 0.8);
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px -20px ;
+    
+}
+
+.container .inputs {
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container .inputs:first-child {
+    margin-top: 0;
+}
+.container .inputs input{
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 350px;
+    height: 40px;
+    margin-top: 20px;
+    background: none;
+    border: 1px solid rgba(255,255,255, 0.3);
+    color: rgba(255,255,255, 0.8);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    letter-spacing: .2em;
+}
+
+.container .inputs input::placeholder{
+   color:  rgba(255,255,255, 0.8);
+}
+
+.container .inputs input[type="submit"]{
+    width: 250px;
+    padding-right: 20px;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+    transition: 0.5s box-shadow, 0.5s font-weight;
+}
+
+.container .inputs input[type="submit"]:hover{
+    padding-right: 20px;
+    position: relative;
+    top: 30px;
+    box-shadow:  0px 0px 5px 5px rgba(255,255,255, 0.3); 
+}
+
+
+
+
+
