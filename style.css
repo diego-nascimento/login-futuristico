@@ -4,12 +4,12 @@
     border: 0;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     width: 100%;
     height: 100vh;
-    min-width: 400px;
     font-family: 'Orbitron', sans-serif;
     background-color: black;
     background: url("bg.jpg") no-repeat;
@@ -25,6 +25,7 @@ body {
     bottom: 50px;
     background-position: center;
     background-size: contain; 
+    min-width: 400px;
     width: 400px;
     height: 600px;
     background-color: rgba(0,0,0, 0.3);
@@ -102,5 +103,29 @@ body {
 
 
 
+@media only screen and (max-width: 320px){
+    body {
+        background-position: -555px 7px;
+        background-size: cover; 
+       }
+    .container .inputs input{
+        width: 250px;
+    }
+    .container .inputs input[type="submit"]{
+        width: 150;
+    }
+}
 
+@media (max-width: 380px){
+    body {
+     background-position: -576px 7px;
+     background-size: cover; 
+    }
+     .container .inputs input{
+         width: 260px;
+     }
+     .container .inputs input[type="submit"]{
+        width: 200;
+    }
+ }
 
